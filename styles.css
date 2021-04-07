@@ -1,0 +1,140 @@
+:root {
+    --transparent: rgba(0,0,0,0);
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #7F7F7F;
+    --light-grey: #BFBFBF;
+    --purple: #AB87FF;
+}
+
+.debug {
+    border: 1px solid black;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color: var(--light-grey);
+    margin: 0;
+}
+
+a, a:visited, a:hover, a:active {
+    color: var(--grey);
+}
+
+hr {
+    margin: 4px;
+}
+
+nav.nav {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: var(--transparent);
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline;
+    padding: 5px;
+    width:min-content;
+    height: fit-content;
+    text-align: center;
+}
+
+nav a.selected {
+    text-decoration: underline;
+    color: var(--purple)
+}
+
+div.container {
+    display: block;
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+header.header {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+footer.footer {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* PHONE */
+
+div.toc {
+    display: none;
+    box-sizing: border-box;
+}
+
+div.content {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+aside.aside {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 600px) {
+    div.toc {
+        display: none;
+    }
+    div.content {
+        display: block;
+        width: 75%;
+        height: auto;
+        float: left;
+        clear: left;
+    }
+    aside.aside {
+        display: block;
+        width: 25%;
+        height: auto;
+        float: right;
+        clear: right;
+    }
+}
+
+/* DESKTOP (Increse from 768px to 1000px */
+
+@media only screen and (min-width: 768px) {
+    div.toc {
+        display: block;
+        width: 15%;
+        height: auto;
+        float: left;
+        clear: left;
+        overflow-x: scroll;
+    }
+    div.content {
+        display: block;
+        width: 60%;
+        height: auto;
+        clear: none;
+    }
+    aside.aside {
+        display: block;
+        width: 25%;
+        height: auto;
+        float: right;
+        clear: right;
+    }
+}
