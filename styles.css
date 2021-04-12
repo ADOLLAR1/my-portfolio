@@ -1,10 +1,20 @@
+/*
+    Alex Dollar
+    /styles.css
+    04-12-2021
+*/
+
 :root {
     --transparent: rgba(0,0,0,0);
     --white: #FFFFFF;
     --black: #000000;
     --grey: #7F7F7F;
     --light-grey: #BFBFBF;
-    --purple: #AB87FF;
+    --purple: #A680FF;
+    --red: #FF8080;
+    --trans-grey:rgba(127, 127, 127, 0.5);
+    --grad: linear-gradient(to right, #FF0000, #00FF00, #0000FF);
+    --font: Helvetica;
 }
 
 .debug {
@@ -16,6 +26,9 @@ html, body {
     height: 100%;
     color: var(--light-grey);
     margin: 0;
+    font-family: var(--font);
+    font-size: 1em;
+    background-color: var(--black);
 }
 
 a, a:visited, a:hover, a:active {
@@ -68,6 +81,7 @@ footer.footer {
     width: 100%;
     height: auto;
     box-sizing: border-box;
+    background-color: var(--trans-grey);
 }
 
 /* PHONE */
@@ -113,7 +127,7 @@ aside.aside {
     }
 }
 
-/* DESKTOP (Increse from 768px to 1000px */
+/* DESKTOP (Increse from 768px to 1000px) *Maybe* */
 
 @media only screen and (min-width: 768px) {
     div.toc {
@@ -137,4 +151,43 @@ aside.aside {
         float: right;
         clear: right;
     }
+}
+
+/* Helper Rules */
+
+button {
+    font-size: 1em;
+    font-family: var(--font);
+}
+
+/* Helper Classes */
+
+.button {
+    display: inline;
+    background-color: var(--purple);
+    border-radius: 5px;
+    padding: 10px;
+    color:  var(--grey);
+    font-weight: bold;
+    border: 0px;
+}
+
+.button-block {
+    display: block;
+    background-color: var(--purple);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--grey);
+    font-weight: bold;
+    border: 0px;
+}
+
+.button:hover, .button-block:hover {
+    background-color: var(--grey);
+    color:var(--purple)
+}
+
+.button:active, .button-block:active {
+    background-color: var(--grey);
+    color: var(--red);
 }
