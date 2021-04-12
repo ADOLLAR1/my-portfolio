@@ -45,6 +45,7 @@ nav.nav {
     height: auto;
     background-color: var(--transparent);
     padding: 10px;
+    box-sizing: border-box;
 }
 
 nav a {
@@ -64,7 +65,7 @@ nav a.selected {
 div.container {
     display: block;
     width: 100%;
-    height: max-content;
+    height: auto;
     box-sizing: border-box;
     overflow: auto;
 }
@@ -74,6 +75,8 @@ header.header {
     width: 100%;
     height: auto;
     box-sizing: border-box;
+    font-weight: bold;
+    text-align: center;
 }
 
 footer.footer {
@@ -160,16 +163,21 @@ button {
     font-family: var(--font);
 }
 
+footer.footer a, footer.footer a:visited, footer.footer a:hover, footer.footer a:active {
+    color:var(--light-grey);
+}
+
 /* Helper Classes */
 
 .button {
-    display: inline;
+    display: inline-block;
     background-color: var(--purple);
     border-radius: 5px;
     padding: 10px;
     color:  var(--grey);
     font-weight: bold;
     border: 0px;
+    box-sizing: border-box;
 }
 
 .button-block {
@@ -180,6 +188,7 @@ button {
     color: var(--grey);
     font-weight: bold;
     border: 0px;
+    box-sizing: border-box;
 }
 
 .button:hover, .button-block:hover {
@@ -190,4 +199,8 @@ button {
 .button:active, .button-block:active {
     background-color: var(--grey);
     color: var(--red);
+}
+
+.no-deco {
+    text-decoration: none;
 }
