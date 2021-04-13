@@ -13,8 +13,8 @@
     --purple: #A680FF;
     --red: #FF8080;
     --trans-grey:rgba(127, 127, 127, 0.5);
-    --grad: linear-gradient(to right, #FF0000, #00FF00, #0000FF);
     --font: Helvetica;
+    --image: url(./assets/images/image.png); /* CHANGE ME */
 }
 
 .debug {
@@ -28,7 +28,8 @@ html, body {
     margin: 0;
     font-family: var(--font);
     font-size: 1em;
-    background-color: var(--black);
+    background-image: var(--image);
+    background-size: cover;
 }
 
 a, a:visited, a:hover, a:active {
@@ -116,14 +117,14 @@ aside.aside {
     }
     div.content {
         display: block;
-        width: 75%;
+        width: 66%;
         height: auto;
         float: left;
         clear: left;
     }
     aside.aside {
         display: block;
-        width: 25%;
+        width: 34%;
         height: auto;
         float: right;
         clear: right;
@@ -203,4 +204,12 @@ footer.footer a, footer.footer a:visited, footer.footer a:hover, footer.footer a
 
 .no-deco {
     text-decoration: none;
+}
+
+.color {
+    color: var(--purple);
+}
+
+ul.pro-list, ol.pro-list {
+    list-style-type: none;
 }
