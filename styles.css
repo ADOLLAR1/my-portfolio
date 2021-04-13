@@ -10,6 +10,7 @@
     --black: #000000;
     --grey: #7F7F7F;
     --light-grey: #BFBFBF;
+    --dark-grey: #3F3F3F;
     --purple: #A680FF;
     --red: #FF8080;
     --trans-grey:rgba(127, 127, 127, 0.5);
@@ -30,14 +31,6 @@ html, body {
     font-size: 1em;
     background-image: var(--image);
     background-size: cover;
-}
-
-a, a:visited, a:hover, a:active {
-    color: var(--grey);
-}
-
-hr {
-    margin: 4px;
 }
 
 nav.nav {
@@ -165,7 +158,15 @@ button {
 }
 
 footer.footer a, footer.footer a:visited, footer.footer a:hover, footer.footer a:active {
-    color:var(--light-grey);
+    color:var(--white);
+}
+
+a, a:visited, a:hover, a:active {
+    color: var(--white);
+}
+
+hr {
+    margin: 4px;
 }
 
 /* Helper Classes */
@@ -193,12 +194,12 @@ footer.footer a, footer.footer a:visited, footer.footer a:hover, footer.footer a
 }
 
 .button:hover, .button-block:hover {
-    background-color: var(--grey);
+    background-color: var(--dark-grey);
     color:var(--purple)
 }
 
 .button:active, .button-block:active {
-    background-color: var(--grey);
+    background-color: var(--dark-grey);
     color: var(--red);
 }
 
