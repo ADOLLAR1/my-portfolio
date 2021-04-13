@@ -213,3 +213,19 @@ footer.footer a, footer.footer a:visited, footer.footer a:hover, footer.footer a
 ul.pro-list, ol.pro-list {
     list-style-type: none;
 }
+
+.star-1::before {
+    content: "⭐";
+}
+.star-2::before {
+    content: "⭐ ⭐";
+}
+.star-3::before {
+    content: "⭐ ⭐ ⭐";
+}
+.star-4::before {
+    content: "⭐ ⭐ ⭐ ⭐";
+}
+.star-5::before {
+    content: "⭐ ⭐ ⭐ ⭐ ⭐";
+}
