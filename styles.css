@@ -166,11 +166,18 @@ a, a:visited, a:hover, a:active {
 }
 
 hr {
-    margin: 4px;
+    margin: 0px;
+    height: 5px;
+    background-color: var(--grey);
 }
 
 img, image {
     width: 100%;
+}
+
+p {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 /* Helper Classes */
@@ -180,6 +187,7 @@ img, image {
     background-color: var(--purple);
     border-radius: 5px;
     padding: 10px;
+    margin: 4px;
     color:  var(--white);
     font-weight: bold;
     border: 0px;
@@ -191,6 +199,7 @@ img, image {
     background-color: var(--purple);
     border-radius: 5px;
     padding: 10px;
+    margin: 4px;
     color: var(--white);
     font-weight: bold;
     border: 0px;
