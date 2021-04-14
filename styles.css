@@ -169,6 +169,10 @@ hr {
     margin: 4px;
 }
 
+img, image {
+    width: 100%;
+}
+
 /* Helper Classes */
 
 .button {
@@ -176,7 +180,7 @@ hr {
     background-color: var(--purple);
     border-radius: 5px;
     padding: 10px;
-    color:  var(--grey);
+    color:  var(--white);
     font-weight: bold;
     border: 0px;
     box-sizing: border-box;
@@ -187,7 +191,7 @@ hr {
     background-color: var(--purple);
     border-radius: 5px;
     padding: 10px;
-    color: var(--grey);
+    color: var(--white);
     font-weight: bold;
     border: 0px;
     box-sizing: border-box;
