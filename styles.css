@@ -172,12 +172,13 @@ footer.footer {
     div.toc {
         display: block;
         width: 15%;
-        height: auto;
+        height: 100%;
         float: left;
         clear: left;
         overflow-x: scroll;
     }
     div.content {
+        margin-left: 15%;
         display: block;
         width: 60%;
         height: auto;
