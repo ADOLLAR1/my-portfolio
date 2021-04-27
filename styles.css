@@ -290,6 +290,12 @@ ol.pro-list {
     list-style-type: none;
 }
 
+ul.rev-list,
+ol.rev-list {
+    list-style-type: none;
+    padding: 0;
+}
+
 .star-1::before {
     content: "⭐";
 }
