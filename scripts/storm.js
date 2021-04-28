@@ -7,23 +7,11 @@ let array = [];
 let lastTime = Date.now();
 let rand = Math.random() - 0.5
 
-function GetHeight() {
-    let oDiv = document.documentElement;
-    let sOriginalOverflow = oDiv.style.overflow;
-    let sOriginalHeight = oDiv.style.height;
-    oDiv.style.overflow = "show";
-    oDiv.style.height = "";
-    let height = oDiv.offsetHeight;
-    oDiv.style.height = sOriginalHeight;
-    oDiv.style.overflow = sOriginalOverflow;
-    return height;
-}
-
 function toggleStorm() {
     if (!state) {
         state = true;
         const vw = Math.max(document.documentElement.clientWidth);
-        const vh = Math.max(GetHeight());
+        const vh = Math.max(document.documentElement.scrollHeight);
         for (let i = 0; i < 1000; i++) {
             const element = document.createElement("div");
             element.className = "storm-element";
@@ -72,7 +60,7 @@ class Drop {
     update(rand) {
         if (this.y > this.vh) {
             this.vw = Math.max(document.documentElement.clientWidth);
-            this.vh = Math.max(GetHeight());
+            this.vh = Math.max(document.documentElement.scrollHeight);
             this.x = Math.floor(Math.random() * this.vw);
             this.y = 0;
             this.t = Math.random() * 360
