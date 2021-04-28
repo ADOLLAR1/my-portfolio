@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <div id="storm"></div>
     <nav class="nav" id="nav">
         <a id="navicon">≡</a>
         <ul>
@@ -33,14 +34,16 @@
     </header>
     <div class="container">
         <div class="toc" id="toc">
-            <ul>
-                <li><a href="#nav">Reviews</a></li>
+            <div>
                 <ul>
-                    <li><a href="#toc">Table of Contents</a></li>
-                    <li><a href="#content">Reviews</a></li>
-                    <li><a href="#footer">Footer</a></li>
+                    <li><a href="#nav">Reviews</a></li>
+                    <ul>
+                        <li><a href="#toc">Table of Contents</a></li>
+                        <li><a href="#content">Reviews</a></li>
+                        <li><a href="#footer">Footer</a></li>
+                    </ul>
                 </ul>
-            </ul>
+            </div>
         </div>
         <div class="content" id="content">
             <ul class="rev-list">
@@ -91,9 +94,12 @@
                 <li><a href="mailto:email@example.com">Email</a></li>
                 <li><a href="tel:1235554567">Phone</a></li>
             </ul>
+            All original works/images cannot and shall not be distributed without permission from myself!<br><br>
+            <button class="button" onclick="toggleStorm();">Toggle rain</button>
         </p>
     </footer>
     <script src="../scripts/footer.js"></script>
+    <script src="../scripts/storm.js"></script>
 </body>
 
 </html>
