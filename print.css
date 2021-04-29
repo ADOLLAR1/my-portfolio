@@ -1,0 +1,150 @@
+/*
+    Alex Dollar
+    /styles.css
+    04-29-2021
+*/
+
+:root {
+    --transparent: rgba(0, 0, 0, 0);
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #7F7F7F;
+    --light-grey: #BFBFBF;
+    --dark-grey: #3F3F3F;
+    --purple: #A680FF;
+    --red: #FF8080;
+    --trans-grey: rgba(127, 127, 127, 0.5);
+    --font: Helvetica;
+    --image: url(./assets/images/image.png);
+    /* CHANGE ME */
+}
+
+.debug {
+    border: 1px solid black;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: var(--light-grey);
+    margin: 0;
+    font-family: var(--font);
+    font-size: 1em;
+    background-image: var(--image);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav.nav,
+div.toc,
+hr,
+#rain-button,
+#click-button {
+    display: none;
+}
+
+button {
+    font-size: 1em;
+    font-family: var(--font);
+}
+
+footer.footer a,
+footer.footer a:visited,
+footer.footer a:hover,
+footer.footer a:active {
+    color: var(--white);
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: var(--white);
+}
+
+hr {
+    margin: 0px;
+    height: 5px;
+    background-color: var(--grey);
+}
+
+img,
+image {
+    width: 25%;
+}
+
+p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--purple);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 4px;
+    color: var(--white);
+    font-weight: bold;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.button-block {
+    display: block;
+    background-color: var(--purple);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 4px;
+    color: var(--white);
+    font-weight: bold;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+
+/* .no-deco {
+    text-decoration: none;
+} */
+
+.color {
+    color: var(--purple);
+}
+
+ul.pro-list,
+ol.pro-list {
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.rev-list,
+ol.rev-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div#storm {
+    display: none;
+}
+
+.star-1::before {
+    content: "⭐";
+}
+
+.star-2::before {
+    content: "⭐ ⭐";
+}
+
+.star-3::before {
+    content: "⭐ ⭐ ⭐";
+}
+
+.star-4::before {
+    content: "⭐ ⭐ ⭐ ⭐";
+}
+
+.star-5::before {
+    content: "⭐ ⭐ ⭐ ⭐ ⭐";
+}
