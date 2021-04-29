@@ -331,6 +331,12 @@ div.storm-element {
     position: absolute;
 }
 
+div.storm-element-1 {
+    background-color: #FFFFFF7F;
+    position: absolute;
+    box-shadow: 0 0 20px #FFFFFF63;
+}
+
 .star-1::before {
     content: "⭐";
 }
