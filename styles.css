@@ -33,6 +33,7 @@ body {
     font-size: 1em;
     background-image: var(--image);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 body * {

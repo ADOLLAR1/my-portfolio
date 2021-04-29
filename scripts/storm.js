@@ -2,6 +2,11 @@ let state = false;
 
 const div = document.querySelector("#storm");
 
+document.documentElement.style.height = "max-content";
+const vh = document.documentElement.scrollHeight;
+document.documentElement.style.height = "100%";
+const vw = document.documentElement.clientWidth - 10;
+
 let array = [];
 
 let lastTime = Date.now();
@@ -10,9 +15,8 @@ let rand = Math.random() - 0.5
 function toggleStorm() {
     if (!state) {
         state = true;
-        const vw = Math.max(document.documentElement.clientWidth);
-        const vh = Math.max(document.documentElement.scrollHeight);
-        for (let i = 0; i < 1000; i++) {
+        div.style.height = `${vh}px`;
+        for (let i = 0; i < 500; i++) {
             const element = document.createElement("div");
             element.className = "storm-element";
             array.push(new Drop(element, vw, vh));
@@ -48,31 +52,25 @@ class Drop {
         this.x = Math.floor(Math.random() * this.vw);
         this.y = Math.floor(Math.random() * this.vh) - this.vh;
         this.t = Math.random() * 360
-        this.sx = Math.random() * 5;
+        this.sx = Math.random() * 10;
         this.sy = this.sx * 2;
         this.update(0);
     }
 
-    equalsElement(element) {
-        return this.element = element;
-    }
-
     update(rand) {
         if (this.y > this.vh) {
-            this.vw = Math.max(document.documentElement.clientWidth);
-            this.vh = Math.max(document.documentElement.scrollHeight);
+            const footerRect = document.querySelector("#footer").getBoundingClientRect();
             this.x = Math.floor(Math.random() * this.vw);
             this.y = 0;
             this.t = Math.random() * 360
             this.sx = Math.random() * 10;
-            this.sy = Math.random() * 10;
+            this.sy = this.sx * 2
         }
         this.element.style.top = `${this.y}px`;
         this.element.style.left = `${this.x}px`;
         this.element.style.width = `${this.sx}px`;
         this.element.style.height = `${this.sy}px`;
-        this.element.style.transform = `${this.t}deg`;
         this.y = this.y + 2;
-        this.x = this.x + (0);
+        this.x = this.x + (rand);
     }
 }
