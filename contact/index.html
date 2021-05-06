@@ -47,11 +47,14 @@
             </div>
         </div>
         <div class="content" id="content">
-            <h2 class="color">Contact Me:</h2>
-            <a href="mailto:email@example.com" class="button no-deco">Email</a>
-            <a href="tel:1235554567" class="button no-deco">Phone</a>
-            <a href="https://github.com/ADOLLAR1" target="_blank" class="button no-deco">GitHub Profile 1</a>
-            <a href="https://github.com/AlexDorian7" target="_blank" class="button no-deco">GitHub Profile 2</a>
+            <h2 class="color">Contact Form: </h2>
+            <form action="https://formspree.io/f/mzbydojq" method="POST">
+                <label for="name">Your Name: </label><input required type="text" name="name"><br><br>
+                <label for="_replyto">Your Email: </label><input required type="email" name="_replyto"><br><br>
+                <label for="subject">Subject: </label><input required type="text" name="subject"><br><br>
+                <label for="message">Your Message: </label><textarea required name="message"></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
         </div>
         <aside class="aside" id="aside">
         </aside>
@@ -61,8 +64,7 @@
         <p>
             Contact Me:
             <ul>
-                <li><a href="mailto:email@example.com">Email</a></li>
-                <li><a href="tel:1235554567">Phone</a></li>
+                <li><a href="../contact">Contact Form</a></li>
             </ul>
             All original works/images cannot and shall not be distributed without permission from myself!<br><br>
             <button id="rain-button" class="button" onclick="toggleStorm();">Toggle rain</button>
