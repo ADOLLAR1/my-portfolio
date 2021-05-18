@@ -21,6 +21,7 @@ function purchaseCheck() {
     if (clickCounter >= 10) {
         clickCounter -= 10;
         clickers++;
+        update(element);
     }
 }
 
