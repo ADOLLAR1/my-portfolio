@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Game</title>
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+
+<body style="height: 100%;">
+    <button style="position: absolute; top: 40%; left: 40%; width: 10%; height: 5%;" class="button" id="click-button" onclick="clicker(document.querySelector('#click-button'));">Click Me!</button>
+    <button style="position: absolute; top: 50%; left: 40%; width: 10%; height: 5%;" class="button" onclick="purchaseCheck();">Purchase Clicker (10)</button>
+    <script src="scripts/games.js"></script>
+    <script>
+        setElement(document.querySelector('#click-button'));
+        startClickers();
+    </script>
+</body>
+
+</html>
