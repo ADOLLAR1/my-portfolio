@@ -353,6 +353,10 @@ div.storm-element-1 {
     content: "⭐ ⭐ ⭐ ⭐";
 }
 
+.star-4-5::before {
+    content: "⭐ ⭐ ⭐ ⭐ ★ (4.5)";
+}
+
 .star-5::before {
     content: "⭐ ⭐ ⭐ ⭐ ⭐";
 }
